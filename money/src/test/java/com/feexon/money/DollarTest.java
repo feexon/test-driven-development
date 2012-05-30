@@ -11,7 +11,6 @@ import static org.junit.Assert.assertEquals;
  */
 public class DollarTest {
     @Test
-    @Ignore
     public void testAmount_afterMultiplication() throws Exception {
         Dollar fiveBucks = new Dollar(5);
         assertEquals("before multiplication", 5, fiveBucks.amount);
