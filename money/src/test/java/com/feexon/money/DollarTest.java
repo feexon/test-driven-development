@@ -2,6 +2,8 @@ package com.feexon.money;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * @author Administrator
  * @version 1.0 12-5-30,下午10:53
