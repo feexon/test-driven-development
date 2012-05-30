@@ -20,6 +20,11 @@ public class DollarTest {
     }
 
     @Test
+    public void testEquality() throws Exception {
+        assertEquals(fiveBucks, new Dollar(5));
+    }
+
+    @Test
     public void testAmount_afterMultiplication() throws Exception {
         assertEquals("before multiplication", 5, fiveBucks.amount);
         fiveBucks.times(2);
@@ -28,7 +33,7 @@ public class DollarTest {
 
     @Test
     public void testMultiplication() throws Exception {
-        Dollar tenBucks=fiveBucks.times(2);
+        Dollar tenBucks = fiveBucks.times(2);
         assertEquals(10, tenBucks.amount);
     }
 
