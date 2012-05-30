@@ -1,5 +1,6 @@
 package com.feexon.money;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -10,6 +11,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class DollarTest {
     @Test
+    @Ignore
     public void testAmount_afterMultiplication() throws Exception {
         Dollar fiveBucks = new Dollar(5);
         assertEquals("before multiplication", 5, fiveBucks.amount);
@@ -20,7 +22,7 @@ public class DollarTest {
     @Test
     public void testMultiplication() throws Exception {
         Dollar fiveBucks = new Dollar(5);
-        fiveBucks.times(2);
-        assertEquals(10, fiveBucks.amount);
+        Dollar tenBucks=fiveBucks.times(2);
+        assertEquals(10, tenBucks.amount);
     }
 }
