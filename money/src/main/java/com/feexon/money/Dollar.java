@@ -5,13 +5,13 @@ package com.feexon.money;
  * @version 1.0 12-5-30,下午10:55
  */
 public class Dollar {
-    public int amount = 10;
+    public int amount;
 
     public Dollar(int amount) {
-
+        this.amount = amount;
     }
 
     public void times(int multiplier) {
-
+        amount *= multiplier;
     }
 }
