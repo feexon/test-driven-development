@@ -1,9 +1,9 @@
 $5+10CHF=$10 if rate=2:1
 make "amount" private
 amount rounding?
-equals()
 hashCode()
-
-
+equals null
+equals other objects
+--equals()
 --$5*2=$10
 --side effect?
