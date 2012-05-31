@@ -5,6 +5,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 /**
  * @author Administrator
@@ -22,6 +23,11 @@ public class DollarTest {
     @Test
     public void testEquality() throws Exception {
         assertEquals(fiveBucks, new Dollar(5));
+    }
+
+    @Test
+    public void testNotEquality() throws Exception {
+        assertFalse(fiveBucks.equals(new Dollar(6)));
     }
 
     @Test
